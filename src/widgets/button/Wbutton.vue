@@ -1,5 +1,5 @@
 <template>
-    <div>
+    
         <a v-if="href" :href="href" :class="extraClass" :disabled="disabled">
             <slot />
         </a>
@@ -8,9 +8,8 @@
         </router-link>        
         <button v-else :type="type" :class="extraClass" :disabled="disabled">
             <slot />
-        </button>
-        <router-view  v-if="to"></router-view>
-    </div>   
+        </button>        
+      
 </template>
 
 <script>
@@ -67,14 +66,14 @@ export default {
 <style lang="scss">
 
  .btn {
-    padding: 5px 0;
-    width: 100%;
+    padding: 5px 0;   
     border-radius: 2px;
     outline: none;
     line-height: 24px;
     transition: 0.5s;
     cursor: pointer;
     border: 2px solid #111B47;
+    display: inline-block;
  }
 
  .dark-btn {
