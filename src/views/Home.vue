@@ -2,16 +2,18 @@
   <main class="main">
     <div class="header-intro-bg"></div>
     <intro></intro>
+    <first-section></first-section>
   </main>
 </template>
 
-
 <script>
 import Intro from '../components/Intro'
+import FirstSection from '../components/FirstSection'
 export default {
   name: 'Home',
   components: {
-    Intro
+    Intro,
+    FirstSection
   }
 }
 </script>
