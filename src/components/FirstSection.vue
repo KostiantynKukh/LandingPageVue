@@ -3,7 +3,10 @@
         <section class="first-section">
             <div class="first-section-wrapper">
                 <section-title class="first-section-title">Light, Fast & Powerful</section-title>
-                <section-desc class="first-section-desc"></section-desc>
+                <section-desc class="first-section-desc">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </section-desc>
                 <section-card class="first-section-card"></section-card>
                 <section-card class="first-section-card"></section-card>            
             </div>

@@ -6,6 +6,7 @@
     <second-section></second-section>
     <third-section></third-section>
     <fourth-section></fourth-section>
+    <price-section></price-section>
   </main>
 </template>
 
@@ -15,6 +16,7 @@ import FirstSection from '../components/FirstSection'
 import SecondSection from '../components/SecondSection'
 import ThirdSection from '../components/ThirdSection'
 import FourthSection from '../components/FourthSection'
+import PriceSection from '../components/PriceSection'
 
 export default {
   name: 'Home',
@@ -23,7 +25,8 @@ export default {
     FirstSection,
     SecondSection,
     ThirdSection,
-    FourthSection
+    FourthSection,
+    PriceSection
   }
 }
 </script>
@@ -31,15 +34,16 @@ export default {
 <style lang="scss" scoped>
 .header-intro-bg {
     position: absolute;
-    margin: 0 auto;
+    margin: 0 auto;  
     display: flex;
-    width:100%;
+    width: 100%;     
     max-width: 1440px;
     min-height: 1110px;
     background: #fff url('../assets/img/intro-bg.svg') no-repeat right top;
     background-size: 71%;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
 }
 </style>

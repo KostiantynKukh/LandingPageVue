@@ -3,7 +3,10 @@
         <section class="fourth-section">
             <div class="fourth-section-wrapper">
                 <section-title class="fourth-section-title">Light, Fast & Powerful</section-title>
-                <section-desc class="fourth-section-desc"></section-desc>
+                <section-desc class="fourth-section-desc">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+                    mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                </section-desc>
                 <Wbutton type="button" size="md" color="dark">Purchase Now</Wbutton>                           
             </div>
         </section> 
