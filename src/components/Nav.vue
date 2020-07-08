@@ -29,19 +29,20 @@ export default {
     &:hover {
         color: #14215c;
     }
+    &:before {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background-color: #14215c;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transition: 0.3s;
+    }
     &:hover:before {
         width: 100%;
         left: 0;
     }
 }
-.nav-link:before {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background-color: #14215c;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    transition: 0.3s;
-}
+
 </style>

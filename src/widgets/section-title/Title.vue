@@ -1,12 +1,12 @@
 <template>
     <h2 class="section-title">
-        Light, Fast & Powerful
+        <slot />
     </h2>
 </template>
 
 <script>
 export default {
-    name: 'zagolovok'
+    name: 'section-title'
 }
 </script>
 
