@@ -4,26 +4,26 @@
             <div class="fourth-section-wrapper">
                 <section-title class="fourth-section-title">Light, Fast & Powerful</section-title>
                 <section-desc class="fourth-section-desc">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                 </section-desc>
-                <Wbutton type="button" size="md" color="dark">Purchase Now</Wbutton>                           
+                <Wbutton type="button" size="md" color="dark">Purchase Now</Wbutton>
             </div>
-        </section> 
+        </section>
     </div>
 </template>
 
 <script>
 import SectionTitle from '../widgets/section-title/Title'
 import SectionDesc from '../widgets/section-desc/Desc'
-import Wbutton from '../widgets/button/Wbutton'
+import Wbutton from '@/widgets/WButton'
 
 export default {
     name: 'fourth-section',
     components: {
         SectionTitle,
         SectionDesc,
-        Wbutton       
+        Wbutton
     }
 }
 </script>
@@ -31,7 +31,7 @@ export default {
 <style lang="scss" scoped>
 .fourth-section {
     padding: 160px 0;
-    background: #fff url('../assets/img/fourth-block-bg.svg') no-repeat left center;
+    background: #fff url('/img/fourth-block-bg.svg') no-repeat left center;
     display: flex;
     justify-content: flex-end;
 }
