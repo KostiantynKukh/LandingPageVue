@@ -4,11 +4,11 @@
             <div class="third-section-wrapper">
                 <section-title class="third-section-title">Light, Fast & Powerful</section-title>
                 <section-desc class="third-section-desc">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                </section-desc>                           
+                </section-desc>
             </div>
-        </section> 
+        </section>
     </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
     name: 'third-section',
     components: {
         SectionTitle,
-        SectionDesc,       
+        SectionDesc,
     }
 }
 </script>
@@ -28,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 .third-section {
     padding: 160px 0;
-    background: #fff url('../assets/img/third-block-bg.svg') no-repeat left center;
+    background: #fff url('/img/third-block-bg.svg') no-repeat left center;
     display: flex;
     justify-content: flex-end;
 }

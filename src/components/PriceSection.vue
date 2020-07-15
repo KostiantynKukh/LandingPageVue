@@ -5,9 +5,9 @@
                 A Price To Suit Everyone
             </section-title>
             <section-desc class="price-section-desc">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus                
-            </section-desc>    
-            
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+            </section-desc>
+
             <span class="price-section-cost">
                 $40
             </span>
@@ -27,7 +27,7 @@
 <script>
 import SectionTitle from '../widgets/section-title/Title'
 import SectionDesc from '../widgets/section-desc/Desc'
-import Wbutton from '../widgets/button/Wbutton'
+import Wbutton from '@/widgets/WButton'
 
 export default {
     name: 'price-section',
@@ -41,9 +41,9 @@ export default {
 
 <style lang="scss" scoped>
 .price-section {
-    padding: 230px 0 170px;    
+    padding: 230px 0 170px;
     max-width: 1440px;
-    background: #fff url('../assets/img/price-block-bg.svg') no-repeat center top;
+    background: #fff url('/img/price-block-bg.svg') no-repeat center top;
 }
 .price-section-wrap {
     margin: 0 auto;
