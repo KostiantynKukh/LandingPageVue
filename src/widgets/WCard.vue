@@ -1,18 +1,30 @@
 <template>
     <div class="section-card">
-        <img class="card-icon" src="/img/first-block-icon.png" alt="icon">
+        <img class="card-icon" :src="src" :alt="alt">
         <h3 class="card-title">
-            Title Goes Here
+            <slot name="title">Title Goes Here</slot>
         </h3>
-        <p class="card-desc">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+        <p class="card-description">
+            <slot name="description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+            </slot>
         </p>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'WCard'
+    name: 'WCard',
+    props: {
+        src: {
+            type: String,
+            required: true
+        },
+        alt: {
+            type: String,
+            required: true
+        }
+    }
 }
 </script>
 
@@ -35,7 +47,7 @@ export default {
     color: #091133;
     margin-bottom: 6px;
 }
-.card-desc {
+.card-description {
     font-size: 12px;
     line-height: 18px;
     color: #5D6970;
