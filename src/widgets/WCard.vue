@@ -1,6 +1,6 @@
 <template>
     <div class="section-card">
-        <img class="card-icon" src="../../assets/img/first-block-icon.png" alt="icon">
+        <img class="card-icon" src="/img/first-block-icon.png" alt="icon">
         <h3 class="card-title">
             Title Goes Here
         </h3>
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-    name: 'section-card'
+    name: 'WCard'
 }
 </script>
 

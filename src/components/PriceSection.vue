@@ -1,13 +1,12 @@
 <template>
     <section class="price-section">
         <div class="price-section-wrap">
-            <section-title class="price-section-title">
-                A Price To Suit Everyone
-            </section-title>
-            <section-desc class="price-section-desc">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus                
-            </section-desc>    
-            
+
+            <h2 class="section-title price-section-title">Light, Fast & Powerful</h2>
+            <p class="section-description price-section-description">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>       
             <span class="price-section-cost">
                 $40
             </span>
@@ -17,24 +16,22 @@
             <span class="price-section-note">
                 See, One price. Simple.
             </span>
-            <Wbutton size="lg" color="dark" type="button">
+            <w-button size="lg" color="dark" type="button">
                 Purchase Now
-            </Wbutton>
+            </w-button>
+
         </div>
     </section>
 </template>
 
 <script>
-import SectionTitle from '../widgets/section-title/Title'
-import SectionDesc from '../widgets/section-desc/Desc'
-import Wbutton from '../widgets/button/Wbutton'
+
+import WButton from '@/widgets/WButton'
 
 export default {
     name: 'price-section',
-    components: {
-        SectionTitle,
-        SectionDesc,
-        Wbutton
+    components: {        
+        WButton
     }
 }
 </script>
@@ -43,7 +40,7 @@ export default {
 .price-section {
     padding: 230px 0 170px;    
     max-width: 1440px;
-    background: #fff url('../assets/img/price-block-bg.svg') no-repeat center top;
+    background: #fff url('/img/price-block-bg.svg') no-repeat center top;
 }
 .price-section-wrap {
     margin: 0 auto;
@@ -55,7 +52,7 @@ export default {
 .price-section-title {
     margin-bottom: 16px;
 }
-.price-section-desc {
+.price-section-description {
     margin-bottom: 35px;
     text-align: center;
 

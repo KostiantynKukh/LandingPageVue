@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: 'wbutton',
+    name: 'WButton',
     props: {
         href: {
             type: String,
