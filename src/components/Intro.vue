@@ -9,12 +9,12 @@
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
                 </p>
-                <W-button class="intro-btn" size="lg" color="dark">
+                <w-button class="intro-btn" size="lg" color="dark">
                     Purchase UI Kit
-                </W-button>
-                <W-button size="lg" color="light">
+                </w-button>
+                <w-button size="lg" color="light">
                     Learn More
-                </W-button>
+                </w-button>
             </div>
         </section> 
     </div>
