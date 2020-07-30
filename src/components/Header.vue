@@ -1,24 +1,22 @@
 <template>
     <div class="wrap">
         <header class="header">            
-                <Nav></Nav>
-                <logo to='/'>Landie</logo>
-                <Wbutton type="button" size="md" color="dark">Buy Now</Wbutton>              
+                <navigation-list />
+                <router-link to="/" class="company-logo">Landie</router-link> 
+                <w-button type="button" size="md" color="dark">Buy Now</w-button>              
         </header>        
     </div>   
 </template>
 
 <script>
-import Wbutton from '../widgets/button/Wbutton'
-import Logo from '../widgets/logo/Logo'
-import Nav from '../components/Nav'
+import WButton from '@/widgets/WButton'
+import NavigationList from '@/components/NavigationList'
 
 export default {
-    name: 'header-app',
+    name: 'HeaderMain',
     components: {
-        Wbutton,
-        Logo,
-        Nav
+        WButton,        
+        NavigationList
     }    
 }
 </script>
@@ -30,5 +28,16 @@ export default {
     padding: 16px 0;   
     align-items: center;
     z-index: 3;
+}
+.company-logo {
+    font-weight: 900;
+    font-size: 2.6em;
+    color: #37447E;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+    color: rgb(255, 0, 212);
+    }    
 }
 </style>

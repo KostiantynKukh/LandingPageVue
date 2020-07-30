@@ -2,33 +2,28 @@
     <div class="wrap">
         <section class="second-section">
             <div class="second-section-wrapper">
-                <section-title class="second-section-title">Light, Fast & Powerful</section-title>
-                <section-desc class="second-section-desc">
+                <h2 class="section-title second-section-title">Light, Fast & Powerful</h2>
+                <p class="section-description">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                </section-desc>                           
+                </p>                          
             </div>
         </section> 
     </div>
 </template>
 
 <script>
-import SectionTitle from '../widgets/section-title/Title'
-import SectionDesc from '../widgets/section-desc/Desc'
+
 
 export default {
-    name: 'second-section',
-    components: {
-        SectionTitle,
-        SectionDesc,       
-    }
+    name: 'SecondSection'    
 }
 </script>
 
 <style lang="scss" scoped>
 .second-section {
     padding: 160px 0;
-    background: #fff url('../assets/img/second-block-bg.svg') no-repeat left center;
+    background: #fff url('/img/second-block-bg.svg') no-repeat left center;
     display: flex;
     justify-content: flex-end;
 }
