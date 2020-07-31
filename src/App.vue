@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <header-main />
-    <router-view></router-view> 
+    <header-component />
+    <router-view></router-view>
+    <footer-component />
   </div>
 </template>
 
 <script>
-import HeaderMain from '@/components/Header'
+import HeaderComponent from '@/components/HeaderComponent'
+import FooterComponent from '@/components/FooterComponent'
+
 export default {
   name: 'app',
   components: {
-    HeaderMain
+    HeaderComponent,
+    FooterComponent
   }
 }
 </script>

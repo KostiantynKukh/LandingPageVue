@@ -40,6 +40,7 @@ export default {
 .price-section {
     padding: 230px 0 170px;    
     max-width: 1440px;
+    margin: 0 auto;
     background: #fff url('/img/price-block-bg.svg') no-repeat center top;
 }
 .price-section-wrap {

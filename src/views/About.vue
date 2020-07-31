@@ -1,11 +1,13 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <design-and-build />
 </template>
 
 <script>
+import DesignAndBuild from '@/components/DesignAndBuild'
 export default {
-  name: 'About',  
+  name: 'About',
+  components: {
+    DesignAndBuild
+  }  
 }
 </script>
