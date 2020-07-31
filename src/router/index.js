@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import About from '../views/About.vue'
+import Contact from '../views/Contact.vue'
 
 Vue.use(VueRouter)
 
@@ -13,12 +15,12 @@ Vue.use(VueRouter)
   {
     path: '/about',
     name: 'About',    
-    component: () => import('../views/About.vue')
+    component: About
   },
   {
     path: '/contact',
     name: 'Contact',    
-    component: () => import('../views/Contact.vue')
+    component: Contact
   }
 ]
 

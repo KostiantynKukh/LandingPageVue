@@ -1,11 +1,13 @@
 <template>
-    <div>
-        This is a contact page
-    </div>
+    <intro-contact />
 </template>
 
 <script>
+import IntroContact from '@/components/IntroContact'
 export default {
-  name: 'Contact'  
+  name: 'Contact',
+  components: {
+    IntroContact
+  }  
 }
 </script>

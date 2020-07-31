@@ -1,13 +1,13 @@
 <template>
-  <design-and-build />
+  <intro-about />
 </template>
 
 <script>
-import DesignAndBuild from '@/components/DesignAndBuild'
+import IntroAbout from '@/components/IntroAbout'
 export default {
   name: 'About',
   components: {
-    DesignAndBuild
+    IntroAbout
   }  
 }
 </script>
