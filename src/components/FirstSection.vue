@@ -44,7 +44,8 @@ export default {
 .first-section-card {
     max-width: 255px;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 20px;        
+    
     &:last-child {
         margin-right: 0;
     }
