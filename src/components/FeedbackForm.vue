@@ -37,7 +37,11 @@
           <label class="form__label">Phone number</label>
           <div class="form-select__wrapper">
             <select name="country" @change="chooseCountry" v-model="selectedCountry" class="form-select" >
-              <option v-for="(country, index) in countries" :key="index" class="form-select__option" :class="country.value" :value="country.value"><span v-if="selectedCountry !== country.value">{{country.name}}</span> {{ country.code }}</option>              
+              <option v-for="(country, index) in countries" :key="index" class="form-select__option" :class="country.value" :value="country.value">
+                <img :src="'/img/country_icons/'+country.value+'.svg'" :alt="country.name">
+                <span v-if="selectedCountry !== country.value">{{country.name}}</span> 
+              {{ country.code }}
+              </option>              
             </select>
             <input type="text" class="form__input" placeholder="123456789" v-model.trim="$v.form.phone.$model"/>
           </div>
@@ -45,8 +49,8 @@
         <!-- SHOW ERROR BLOCK START -->
           <!-- <div class="error" v-if="!$v.form.phone.required && form.submitStatus === 'ERROR'">First name is required!</div> -->
           <div class="error" v-if="!$v.form.phone.numeric && form.submitStatus === 'ERROR'">Phone number must contains only numeric characters!</div>
-          <div class="error" v-if="!$v.form.phone.minLength && form.submitStatus === 'ERROR'">First name must have at least {{$v.form.phone.$params.minLength.min}} letters!</div>
-          <div class="error" v-if="!$v.form.phone.maxLength && form.submitStatus === 'ERROR'">First name must have maximum {{$v.form.phone.$params.maxLength.min}} letters!</div>
+          <div class="error" v-if="!$v.form.phone.minLength && form.submitStatus === 'ERROR'">Phone number must have at least {{$v.form.phone.$params.minLength.min}} letters!</div>
+          <div class="error" v-if="!$v.form.phone.maxLength && form.submitStatus === 'ERROR'">Phone number must have maximum {{$v.form.phone.$params.maxLength.max}} numbers!</div>
         <!-- SHOW ERROR BLOCK END --> 
       </div>        
     <!-- PHONE END-->
@@ -113,7 +117,7 @@ export default {
           {
             name: 'Ukraine',
             value: 'ua',
-            code: '+380'
+            code: '+380'            
           },
           {
             name: 'United Kingdom',
@@ -124,7 +128,7 @@ export default {
             name: 'United Arab Emirates',
             value: 'ae',
             code: '+971'
-          }  
+          }
         ]      
     }
   },   
@@ -163,7 +167,7 @@ export default {
   },
   methods: {
     chooseCountry() {
-      console.log(this.selectedCountry);
+      
     },
     submit() {
       this.$v.form.$touch()
@@ -236,7 +240,7 @@ export default {
 .form-select__wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  
+  column-gap: 10px;  
 }
 
 .form-group--error {
